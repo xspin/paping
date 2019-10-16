@@ -22,7 +22,7 @@ pcc_t i18n_c::GetString(int id)
 														"Connection statistics:\n"
 														"\tAttempted = $%d$, Connected = $%d$, Failed = $%d$ ($%.2f%%$)\n"
 														"Approximate connection times:\n"
-														"\tMinimum = $%.2fms$, Maximum = $%.2fms$, Average = $%.2fms$\n";
+														"\tMinimum = $%.2fms$, Maximum = $%.2fms$, Average = $%.2fms$, Std = $%.2fms$\n";
 
 		case ERROR_POUTOFMEMORY:					return	"Out of memory";
 		case ERROR_SOCKET_TIMEOUT:				return	"$Connection timed out$";

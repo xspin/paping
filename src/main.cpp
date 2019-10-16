@@ -31,6 +31,7 @@ int main(int argc, pc_t argv[])
 	stats.Minimum	= 0.0;
 	stats.Maximum	= 0.0;
 	stats.Total		= 0.0;
+	stats.Totalsq	= 0.0;
 
 	arguments_c::PrintBanner();
 
@@ -87,6 +88,7 @@ int main(int argc, pc_t argv[])
 		{
 			stats.Connects++;
 			stats.Total += time;
+			stats.Totalsq += time*time;
 			stats.UpdateMaxMin(time);
 
 			printSuccessfulConnection(host, time);
