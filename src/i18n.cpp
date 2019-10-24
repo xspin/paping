@@ -45,7 +45,7 @@ pcc_t i18n_c::GetString(int id, bool colored)
 														" -p, --port N\tset TCP port N (required)\n"
 														//" -p, --port N\tset TCP/UDP port N (required)\n"
 														//"     --tcp\tuse TCP protocol (default)\n"
-														"     --nocolor\tDisable color output\n"
+														// "     --nocolor\tDisable color output\n"
 														" -t, --timeout\ttimeout in milliseconds (default 1000)\n"
 														" -c, --count N\tset number of checks to N\n";
 

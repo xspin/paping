@@ -1,23 +1,23 @@
 #include "standard.h"
-#include <cstdio>
-#include <iostream>
-#include <ctime>
-#include <sys/time.h>
+// #include <cstdio>
+// #include <iostream>
+// #include <ctime>
+// #include <sys/time.h>
 
 using namespace std;
 
-double ts() {
-    struct timeval tp;
-    gettimeofday(&tp, NULL);
-    long int s = tp.tv_sec;
-    long int ms = tp.tv_usec;
-    double t = s + ms/1000000.0;
-    return t;
-}
+// double ts() {
+//     struct timeval tp;
+//     gettimeofday(&tp, NULL);
+//     long int s = tp.tv_sec;
+//     long int ms = tp.tv_usec;
+//     double t = s + ms/1000000.0;
+//     return t;
+// }
 
-void info(std::string s) {
-    printf("[%lf] %s\n", ts(), s.c_str());
-}
+// void info(std::string s) {
+//     printf("[%lf] %s\n", ts(), s.c_str());
+// }
 
 void printError(int error);
 int printConnectInfo(host_c host);
