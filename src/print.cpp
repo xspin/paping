@@ -9,6 +9,8 @@ int print_c::initialColors_ = 0;
 
 void print_c::FormattedPrint(int color, pcc_t data)
 {
+	cout << data; return; // fix high CPU usage problem.
+
 	slice_s		slices[8];
 	pc_t		slice;
 	int			length	= strlen(data);

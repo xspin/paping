@@ -9,5 +9,5 @@
 class i18n_c
 {
 	public:
-		static pcc_t GetString(int id);
+		static pcc_t GetString(int id, bool colored=false);
 };
